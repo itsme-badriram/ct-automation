@@ -1,0 +1,81 @@
+<div class="main">
+  <div class="container">
+
+    <div class="middle-bar">
+        <div class="title-bar">
+            <h1>Department of Computer Technology</h1>
+            <span>Madras Institute of Technology, Anna University</span>
+        </div>
+        <div class="grid-container">
+          <mat-grid-list cols="2" rowHeight="350px">
+            <mat-grid-tile *ngFor="let card of cards | async" [colspan]="card.cols" [rowspan]="card.rows">
+              <mat-card class="dashboard-card">
+                <mat-card-header>
+                  <mat-card-title>
+                    {{card.title}}
+
+                  </mat-card-title>
+                </mat-card-header>
+                <mat-card-content class="dashboard-card-content">
+                  <div>Card Content Here</div>
+                </mat-card-content>
+              </mat-card>
+            </mat-grid-tile>
+          </mat-grid-list>
+        </div>
+
+        <!--<div class="grid-container">
+          <mat-grid-list cols="2" rowHeight="350px">
+            <mat-grid-tile *ngFor="let card of cards | async" [colspan]="card.cols" [rowspan]="card.rows">
+              <mat-card class="dashboard-card">
+                <mat-card-header>
+                  <mat-card-title>
+                    {{card.title}}
+                  <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+                      <mat-icon>more_vert</mat-icon>
+                    </button>
+                    <mat-menu #menu="matMenu" xPosition="before">
+                      <button mat-menu-item>Expand</button>
+                      <button mat-menu-item>Remove</button>
+                    </mat-menu>
+                  </mat-card-title>
+                </mat-card-header>
+                <mat-card-content class="dashboard-card-content">
+                  <div>Card Content Here</div>
+                </mat-card-content>
+              </mat-card>
+            </mat-grid-tile>
+          </mat-grid-list>
+        </div>-->
+
+    </div>
+    <div class="right-bar">
+        <div class="card">
+            <h3>Announcements</h3>
+            <div class="announce-card">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, ex.</p>
+                <span class="time-announce"> - 11th Sep 2020, 11:54 AM</span>
+            </div>
+            <div class="announce-card">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, ex. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <span class="time-announce"> - 09th Sep 2020, 07:54 PM</span>
+            </div>
+            <div class="announce-card">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, ex. Lorem ipsum dolor sit amet.</p>
+                <span class="time-announce"> - 03rd Aug 2020, 08:11 AM</span>
+            </div>
+            <a href="">View More</a>
+        </div>
+        <div class="card">
+            <h3>News</h3>
+            <div class="announce-card">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta officia reprehenderit adipisci minus, amet, veritatis laboriosam ea odit laudantium dolore nostrum corrupti iste mollitia iure tenetur voluptas animi cumque dignissimos nisi suscipit alias, doloribus ex.</p>
+                <span class="time-announce"> - 03rd Aug 2020, 08:11 AM</span>
+            </div>
+        </div>
+    </div>
+  </div>
+  </div>
+
+
+
