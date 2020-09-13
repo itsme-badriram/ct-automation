@@ -153,3 +153,67 @@
   .title-bar{
   }
 }
+.main-second{
+  flex-wrap: wrap;
+}
+.box{
+  width: 50%;
+  margin: 1em;
+  box-sizing: border-box;
+  padding: 0.5em;
+  border-radius: 5px;
+  border: 1px solid gainsboro;
+}
+.ess{
+  margin-top: 0;
+  width: 25%;
+  height: 40vh;
+  border-top: 4px solid rgb(49, 110, 164);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.essential-title{
+  margin: 0;
+  padding: 0.75em;
+  border-radius: 4px;
+}
+.ess p{
+  width: 75%;
+  text-align: justify;
+  color: grey;
+}
+.main-second{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  margin: auto;
+  margin-top: 1em;
+  box-sizing: border-box;
+}
+@media only screen and (max-width:1560px){
+  .main-second {
+    width: 80%;
+  }
+  .ess{
+    width: 26%;
+}
+}
+@media only screen and (max-width:1450px){
+  .main-second {
+    width: 95%;
+  }
+  .ess {
+    width: 40%;
+  }
+}
+@media only screen and (max-width:600px){
+  .main-second {
+    width: 95%;
+  }
+  .ess {
+    width: 80%;
+  }
+}
