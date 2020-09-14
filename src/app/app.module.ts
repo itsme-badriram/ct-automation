@@ -24,13 +24,15 @@ import { NavComponent } from './nav/nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { HomeComponent } from './home/home.component';
 import { MatMenuModule } from '@angular/material/menu';
+import { HomeNewComponent } from './home-new/home-new.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     PersonDetailsComponent,
     NavComponent,
-    HomeComponent
+    HomeComponent,
+    HomeNewComponent
   ],
   imports: [
     BrowserModule,
